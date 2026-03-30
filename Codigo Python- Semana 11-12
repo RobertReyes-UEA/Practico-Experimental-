@@ -1,0 +1,7 @@
+import smbus
+
+bus = smbus.SMBus(1)
+address = 0x48
+
+data = bus.read_byte(address)
+print("Dato recibido:", data)
